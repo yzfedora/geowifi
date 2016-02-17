@@ -323,6 +323,8 @@ void geowifi_delete(struct geowifi *gw)
 		free(gw->gw_url);
 	if (gw->gw_data)
 		free(gw->gw_data);
+	if (gw->gw_json)
+		free(gw->gw_json);
 	if (gw->gw_error)
 		free(gw->gw_error);
 
